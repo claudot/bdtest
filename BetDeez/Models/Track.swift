@@ -9,12 +9,18 @@
 import Foundation
 import SwiftyJSON
 
-struct Track {
-    let id: Int64
-    let title: String
-    let duration: Double
-    let artist: Artist
+struct Track: Trackable {
+    var id: Int64
+    var title: String
+    var duration: TimeInterval
+    var artist: Artist
     
+    var artistName: String {
+        get {
+            return artist.name
+        }
+    }
+
     init?(json: JSON) {
         
         guard   let id = json["id"].int64,

@@ -11,14 +11,14 @@ import RxAlamofire
 import SwiftyJSON
 
 extension Api {
-    func getTracksList(stringUrl: String)-> Observable<[Track]> {
+    func getTracksList(stringUrl: String)-> Observable<[Trackable]> {
         let path = stringUrl
         
         return  requestJSON(.get, path, parameters: nil)
             .map{
                 JSON.init($0.1)
             }
-            .flatMap{ json -> Observable<[Track]> in
+            .flatMap{ json -> Observable<[Trackable]> in
                 guard let trackssData = json["data"].array else {
                     return Observable.empty()
                 }

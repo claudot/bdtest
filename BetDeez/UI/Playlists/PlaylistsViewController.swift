@@ -83,7 +83,7 @@ extension PlaylistsViewController: UICollectionViewDelegate {
         collectionView.deselectItem(at: indexPath, animated: false)
         
         let detailVC = PlaylistDetailViewController()
-        let detailViewModel = PlaylistDetailViewModel(playlist: viewModel.playlists.flatMap({ (playlists) -> Observable<Playlist> in
+        let detailViewModel = PlaylistDetailViewModel(playlist: viewModel.playlists.flatMap({ (playlists) -> Observable<Playlistable> in
             return Observable.from(optional: playlists[indexPath.row])
         }))
         detailVC.viewModel = detailViewModel

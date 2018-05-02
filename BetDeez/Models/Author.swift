@@ -10,8 +10,8 @@ import Foundation
 import SwiftyJSON
 
 struct Author {
-    let id: Int64
-    let name: String
+    var id: Int64
+    var name: String
     
     init?(json: JSON) {
         

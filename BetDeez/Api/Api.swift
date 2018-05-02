@@ -21,6 +21,6 @@ class Api {
     }
 
     struct Constants {
-        static let baseURL = "https://api.deezer.com/"
+        static let DeezerBaseURL = "https://api.deezer.com/"
     }
 }

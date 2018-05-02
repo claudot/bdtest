@@ -9,14 +9,20 @@
 import Foundation
 import SwiftyJSON
 
-struct Playlist {
-    let id: Int64
-    let title: String
-    let thumbnail: String
-    let cover: String
-    let tracklist: String
-    let duration: TimeInterval
-    let author: Author
+struct Playlist: Playlistable{
+    var id: Int64
+    var title: String
+    var thumbnail: String
+    var cover: String
+    var tracklist: String
+    var duration: TimeInterval
+    var author: Author
+    
+    var authorName: String {
+        get {
+            return author.name
+        }
+    }
     
     init?(json: JSON) {
         

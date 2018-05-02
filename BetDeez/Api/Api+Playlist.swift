@@ -11,14 +11,12 @@ import RxAlamofire
 import SwiftyJSON
 
 extension Api {
-    func getPlaylists(userId: String)-> Observable<[Playlist]> {
-        let path = "\(Constants.baseURL)user/\(userId)/playlists"
-
-        return  requestJSON(.get, path, parameters: nil)
+    func getPlaylists(url: String)-> Observable<[Playlistable]> {
+        return  requestJSON(.get, url, parameters: nil)
             .map{
                 JSON.init($0.1)
             }
-            .flatMap{ json -> Observable<[Playlist]> in
+            .flatMap{ json -> Observable<[Playlistable]> in
                 guard let playslistsData = json["data"].array else {
                     return Observable.empty()
                 }

@@ -11,17 +11,17 @@ import RxSwift
 final class PlaylistDetailViewModel {
     
     //MARK: - Dependecies
-    private let playlist: Observable<Playlist>
+    private let playlist: Observable<Playlistable>
     private let disposeBag = DisposeBag()
     
     //MARK: - Model
-    let tracks: Observable<[Track]>
+    let tracks: Observable<[Trackable]>
     let title: Observable<String>
     let duration: Observable<String>
     let cover: Observable<String>
 
     //MARK: - Set up
-    init(playlist: Observable<Playlist>) {
+    init(playlist: Observable<Playlistable>) {
         
         //Initialise dependencies
         self.playlist = playlist

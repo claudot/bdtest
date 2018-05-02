@@ -30,6 +30,7 @@
 		07B9B3F62099E62C0054C9ED /* TrackCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B9B3F52099E62C0054C9ED /* TrackCell.swift */; };
 		07B9B3F82099E6470054C9ED /* TrackCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07B9B3F72099E6470054C9ED /* TrackCell.xib */; };
 		07B9B3FB2099F3240054C9ED /* Playlistable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B9B3FA2099F3240054C9ED /* Playlistable.swift */; };
+		07B9B3FD2099F8AC0054C9ED /* Trackable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B9B3FC2099F8AC0054C9ED /* Trackable.swift */; };
 		1522E428CEF1646C81EA99A2 /* Pods_BetDeez.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA2560914C36FC031B672546 /* Pods_BetDeez.framework */; };
 		1F6D8D61A89C0DB14C543675 /* Pods_BetDeezTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D48D91FCC72E4A03BAFCE70 /* Pods_BetDeezTests.framework */; };
 /* End PBXBuildFile section */
@@ -72,6 +73,7 @@
 		07B9B3F52099E62C0054C9ED /* TrackCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackCell.swift; sourceTree = "<group>"; };
 		07B9B3F72099E6470054C9ED /* TrackCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrackCell.xib; sourceTree = "<group>"; };
 		07B9B3FA2099F3240054C9ED /* Playlistable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Playlistable.swift; sourceTree = "<group>"; };
+		07B9B3FC2099F8AC0054C9ED /* Trackable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trackable.swift; sourceTree = "<group>"; };
 		0E451A35EF00CEBB23A104DE /* Pods-BetDeez.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BetDeez.release.xcconfig"; path = "Pods/Target Support Files/Pods-BetDeez/Pods-BetDeez.release.xcconfig"; sourceTree = "<group>"; };
 		3CB714B70293B5175BA399C3 /* Pods-BetDeez.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BetDeez.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BetDeez/Pods-BetDeez.debug.xcconfig"; sourceTree = "<group>"; };
 		5D48D91FCC72E4A03BAFCE70 /* Pods_BetDeezTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BetDeezTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -251,6 +253,7 @@
 			isa = PBXGroup;
 			children = (
 				07B9B3FA2099F3240054C9ED /* Playlistable.swift */,
+				07B9B3FC2099F8AC0054C9ED /* Trackable.swift */,
 			);
 			path = Protocol;
 			sourceTree = "<group>";
@@ -509,6 +512,7 @@
 				07B9B3D320988A110054C9ED /* Api.swift in Sources */,
 				07B9B3E12099A3A00054C9ED /* Timestamp+Formatter.swift in Sources */,
 				07B9B3CD2098878C0054C9ED /* Author.swift in Sources */,
+				07B9B3FD2099F8AC0054C9ED /* Trackable.swift in Sources */,
 				07B9B3FB2099F3240054C9ED /* Playlistable.swift in Sources */,
 				07B9B3A52097A4700054C9ED /* AppDelegate.swift in Sources */,
 				07B9B3D520988BA80054C9ED /* Api+Playlist.swift in Sources */,

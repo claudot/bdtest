@@ -1,5 +1,5 @@
 //
-//  Playlistable.swift
+//  Trackable.swift
 //  BetDeez
 //
 //  Created by Paul-Anatole CLAUDOT on 02/05/2018.
@@ -8,11 +8,8 @@
 
 import Foundation
 
-protocol Playlistable {
+protocol Trackable {
     var title: String {get}
-    var thumbnail: String {get}
-    var cover: String {get}
-    var tracklist: String {get}
     var duration: TimeInterval {get}
-    var authorName: String {get}
+    var artistName: String {get}
 }

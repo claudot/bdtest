@@ -16,7 +16,7 @@ final class PlaylistsViewModel {
     
     
     //MARK: - Model
-    let playlists: Observable<[Playlist]>
+    let playlists: Observable<[Playlistable]>
 
     //MARK: - Set up
     init(userId: String) {
@@ -25,7 +25,7 @@ final class PlaylistsViewModel {
         self.userId = userId
         
         // Subscribe playlists
-        playlists = Api.sharedApi.getPlaylists(userId: userId)
+        playlists = Api.sharedApi.getPlaylists(url: "\(Api.Constants.DeezerBaseURL)user/\(userId)/playlists")
 
         //Initialise observers --> None here
     }

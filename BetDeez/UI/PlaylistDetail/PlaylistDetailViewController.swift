@@ -51,7 +51,7 @@ class PlaylistDetailViewController: UIViewController {
         viewModel.tracks.bind(to: tableView.rx.items) {
             (tableView, row, track) in
                 let cell = tableView.dequeueReusableCell(withIdentifier: TrackCell.reusableIdentifier) as! TrackCell
-                cell.titleAndArtistLabel.text = "\(track.title) - \(track.artist.name)"
+                cell.titleAndArtistLabel.text = "\(track.title) - \(track.artistName)"
                 cell.durationLabel.text = track.duration.formattedTime()
                 return cell
             }
