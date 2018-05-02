@@ -24,9 +24,6 @@ class BetDeezTests: XCTestCase {
         super.tearDown()
     }
     
-    func playlistsParsingTest() {
-    }
-    
     func testPerformanceExample() {
         // This is an example of a performance test case.
         self.measure {

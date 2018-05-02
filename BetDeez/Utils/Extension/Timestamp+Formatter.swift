@@ -10,8 +10,15 @@ import Foundation
 
 extension Double {
     func formattedTime()-> String {
+        if (self >= 86400) {
+            return NSLocalizedString("More than a day!", comment: "")
+        }
+        if (self < 0) {
+            return "00:00:00"
+        }
         let formatter = DateFormatter()
-        let date = Date.init(timeIntervalSince1970: self)
+        formatter.timeZone = TimeZone.init(secondsFromGMT: 0)
+        let date = Date(timeIntervalSince1970: self)
         formatter.setLocalizedDateFormatFromTemplate("HH:mm:ss")
         return formatter.string(from: date)
     }
