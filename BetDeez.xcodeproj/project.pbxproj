@@ -1,0 +1,764 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		07B9B3A52097A4700054C9ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B9B3A42097A4700054C9ED /* AppDelegate.swift */; };
+		07B9B3AC2097A4700054C9ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07B9B3AB2097A4700054C9ED /* Assets.xcassets */; };
+		07B9B3AF2097A4700054C9ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07B9B3AD2097A4700054C9ED /* LaunchScreen.storyboard */; };
+		07B9B3BA2097A4700054C9ED /* BetDeezTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B9B3B92097A4700054C9ED /* BetDeezTests.swift */; };
+		07B9B3CB209884540054C9ED /* Playlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B9B3CA209884540054C9ED /* Playlist.swift */; };
+		07B9B3CD2098878C0054C9ED /* Author.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B9B3CC2098878C0054C9ED /* Author.swift */; };
+		07B9B3CF209889220054C9ED /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B9B3CE209889220054C9ED /* Track.swift */; };
+		07B9B3D12098892A0054C9ED /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B9B3D02098892A0054C9ED /* Artist.swift */; };
+		07B9B3D320988A110054C9ED /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B9B3D220988A110054C9ED /* Api.swift */; };
+		07B9B3D520988BA80054C9ED /* Api+Playlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B9B3D420988BA80054C9ED /* Api+Playlist.swift */; };
+		07B9B3D720988BB60054C9ED /* Api+Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B9B3D620988BB60054C9ED /* Api+Track.swift */; };
+		07B9B3DA2099A2D40054C9ED /* PlaylistsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B9B3D92099A2D40054C9ED /* PlaylistsViewController.swift */; };
+		07B9B3DC2099A2E60054C9ED /* PlaylistsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07B9B3DB2099A2E60054C9ED /* PlaylistsViewController.xib */; };
+		07B9B3DF2099A30B0054C9ED /* PlaylistsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B9B3DE2099A30B0054C9ED /* PlaylistsViewModel.swift */; };
+		07B9B3E12099A3A00054C9ED /* Timestamp+Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B9B3E02099A3A00054C9ED /* Timestamp+Formatter.swift */; };
+		07B9B3E42099AC250054C9ED /* PlaylistCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B9B3E32099AC250054C9ED /* PlaylistCell.swift */; };
+		07B9B3E62099AC300054C9ED /* PlaylistCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07B9B3E52099AC300054C9ED /* PlaylistCell.xib */; };
+		07B9B3ED2099C36C0054C9ED /* PlaylistDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B9B3EC2099C36C0054C9ED /* PlaylistDetailViewController.swift */; };
+		07B9B3EF2099C38D0054C9ED /* PlaylistDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07B9B3EE2099C38D0054C9ED /* PlaylistDetailViewController.xib */; };
+		07B9B3F32099C4010054C9ED /* PlaylistDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B9B3F22099C4010054C9ED /* PlaylistDetailViewModel.swift */; };
+		07B9B3F62099E62C0054C9ED /* TrackCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B9B3F52099E62C0054C9ED /* TrackCell.swift */; };
+		07B9B3F82099E6470054C9ED /* TrackCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07B9B3F72099E6470054C9ED /* TrackCell.xib */; };
+		07B9B3FB2099F3240054C9ED /* Playlistable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B9B3FA2099F3240054C9ED /* Playlistable.swift */; };
+		1522E428CEF1646C81EA99A2 /* Pods_BetDeez.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA2560914C36FC031B672546 /* Pods_BetDeez.framework */; };
+		1F6D8D61A89C0DB14C543675 /* Pods_BetDeezTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D48D91FCC72E4A03BAFCE70 /* Pods_BetDeezTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		07B9B3B62097A4700054C9ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07B9B3992097A4700054C9ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 07B9B3A02097A4700054C9ED;
+			remoteInfo = BetDeez;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		07B9B3A12097A4700054C9ED /* BetDeez.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BetDeez.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		07B9B3A42097A4700054C9ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		07B9B3AB2097A4700054C9ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		07B9B3AE2097A4700054C9ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		07B9B3B02097A4700054C9ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07B9B3B52097A4700054C9ED /* BetDeezTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BetDeezTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		07B9B3B92097A4700054C9ED /* BetDeezTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetDeezTests.swift; sourceTree = "<group>"; };
+		07B9B3BB2097A4700054C9ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07B9B3CA209884540054C9ED /* Playlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Playlist.swift; sourceTree = "<group>"; };
+		07B9B3CC2098878C0054C9ED /* Author.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Author.swift; sourceTree = "<group>"; };
+		07B9B3CE209889220054C9ED /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
+		07B9B3D02098892A0054C9ED /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
+		07B9B3D220988A110054C9ED /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		07B9B3D420988BA80054C9ED /* Api+Playlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Api+Playlist.swift"; sourceTree = "<group>"; };
+		07B9B3D620988BB60054C9ED /* Api+Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Api+Track.swift"; sourceTree = "<group>"; };
+		07B9B3D92099A2D40054C9ED /* PlaylistsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistsViewController.swift; sourceTree = "<group>"; };
+		07B9B3DB2099A2E60054C9ED /* PlaylistsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlaylistsViewController.xib; sourceTree = "<group>"; };
+		07B9B3DE2099A30B0054C9ED /* PlaylistsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistsViewModel.swift; sourceTree = "<group>"; };
+		07B9B3E02099A3A00054C9ED /* Timestamp+Formatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Timestamp+Formatter.swift"; sourceTree = "<group>"; };
+		07B9B3E32099AC250054C9ED /* PlaylistCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistCell.swift; sourceTree = "<group>"; };
+		07B9B3E52099AC300054C9ED /* PlaylistCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlaylistCell.xib; sourceTree = "<group>"; };
+		07B9B3EC2099C36C0054C9ED /* PlaylistDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistDetailViewController.swift; sourceTree = "<group>"; };
+		07B9B3EE2099C38D0054C9ED /* PlaylistDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlaylistDetailViewController.xib; sourceTree = "<group>"; };
+		07B9B3F22099C4010054C9ED /* PlaylistDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistDetailViewModel.swift; sourceTree = "<group>"; };
+		07B9B3F52099E62C0054C9ED /* TrackCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackCell.swift; sourceTree = "<group>"; };
+		07B9B3F72099E6470054C9ED /* TrackCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrackCell.xib; sourceTree = "<group>"; };
+		07B9B3FA2099F3240054C9ED /* Playlistable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Playlistable.swift; sourceTree = "<group>"; };
+		0E451A35EF00CEBB23A104DE /* Pods-BetDeez.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BetDeez.release.xcconfig"; path = "Pods/Target Support Files/Pods-BetDeez/Pods-BetDeez.release.xcconfig"; sourceTree = "<group>"; };
+		3CB714B70293B5175BA399C3 /* Pods-BetDeez.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BetDeez.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BetDeez/Pods-BetDeez.debug.xcconfig"; sourceTree = "<group>"; };
+		5D48D91FCC72E4A03BAFCE70 /* Pods_BetDeezTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BetDeezTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA2560914C36FC031B672546 /* Pods_BetDeez.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BetDeez.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC6162C0C9A56FF84A8FF504 /* Pods-BetDeezTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BetDeezTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BetDeezTests/Pods-BetDeezTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DA2A980597779D79CDD827A9 /* Pods-BetDeezTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BetDeezTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BetDeezTests/Pods-BetDeezTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		07B9B39E2097A4700054C9ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1522E428CEF1646C81EA99A2 /* Pods_BetDeez.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07B9B3B22097A4700054C9ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F6D8D61A89C0DB14C543675 /* Pods_BetDeezTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		07B9B3982097A4700054C9ED = {
+			isa = PBXGroup;
+			children = (
+				07B9B3A32097A4700054C9ED /* BetDeez */,
+				07B9B3B82097A4700054C9ED /* BetDeezTests */,
+				07B9B3A22097A4700054C9ED /* Products */,
+				8002EADEB646F19E0FC1EB75 /* Pods */,
+				E0FC2BFE73BC9FED3BCB3149 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		07B9B3A22097A4700054C9ED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				07B9B3A12097A4700054C9ED /* BetDeez.app */,
+				07B9B3B52097A4700054C9ED /* BetDeezTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		07B9B3A32097A4700054C9ED /* BetDeez */ = {
+			isa = PBXGroup;
+			children = (
+				07B9B3C92097A57D0054C9ED /* UI */,
+				07B9B3F92099F3110054C9ED /* Protocol */,
+				07B9B3C82097A5730054C9ED /* Models */,
+				07B9B3C72097A56B0054C9ED /* Api */,
+				07B9B3C42097A5270054C9ED /* Utils */,
+				07B9B3A42097A4700054C9ED /* AppDelegate.swift */,
+				07B9B3AB2097A4700054C9ED /* Assets.xcassets */,
+				07B9B3AD2097A4700054C9ED /* LaunchScreen.storyboard */,
+				07B9B3B02097A4700054C9ED /* Info.plist */,
+			);
+			path = BetDeez;
+			sourceTree = "<group>";
+		};
+		07B9B3B82097A4700054C9ED /* BetDeezTests */ = {
+			isa = PBXGroup;
+			children = (
+				07B9B3B92097A4700054C9ED /* BetDeezTests.swift */,
+				07B9B3BB2097A4700054C9ED /* Info.plist */,
+			);
+			path = BetDeezTests;
+			sourceTree = "<group>";
+		};
+		07B9B3C42097A5270054C9ED /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				07B9B3C52097A52E0054C9ED /* Extension */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		07B9B3C52097A52E0054C9ED /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				07B9B3E02099A3A00054C9ED /* Timestamp+Formatter.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		07B9B3C72097A56B0054C9ED /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				07B9B3D220988A110054C9ED /* Api.swift */,
+				07B9B3D420988BA80054C9ED /* Api+Playlist.swift */,
+				07B9B3D620988BB60054C9ED /* Api+Track.swift */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		07B9B3C82097A5730054C9ED /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				07B9B3CA209884540054C9ED /* Playlist.swift */,
+				07B9B3CC2098878C0054C9ED /* Author.swift */,
+				07B9B3CE209889220054C9ED /* Track.swift */,
+				07B9B3D02098892A0054C9ED /* Artist.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		07B9B3C92097A57D0054C9ED /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				07B9B3D82099A2C00054C9ED /* Playlists */,
+				07B9B3EB2099C3510054C9ED /* PlaylistDetail */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		07B9B3D82099A2C00054C9ED /* Playlists */ = {
+			isa = PBXGroup;
+			children = (
+				07B9B3E22099AC160054C9ED /* Views */,
+				07B9B3DD2099A2FC0054C9ED /* ViewModel */,
+				07B9B3D92099A2D40054C9ED /* PlaylistsViewController.swift */,
+				07B9B3DB2099A2E60054C9ED /* PlaylistsViewController.xib */,
+			);
+			path = Playlists;
+			sourceTree = "<group>";
+		};
+		07B9B3DD2099A2FC0054C9ED /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				07B9B3DE2099A30B0054C9ED /* PlaylistsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		07B9B3E22099AC160054C9ED /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				07B9B3E32099AC250054C9ED /* PlaylistCell.swift */,
+				07B9B3E52099AC300054C9ED /* PlaylistCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		07B9B3EB2099C3510054C9ED /* PlaylistDetail */ = {
+			isa = PBXGroup;
+			children = (
+				07B9B3F12099C3F20054C9ED /* View */,
+				07B9B3F02099C3EB0054C9ED /* ViewModel */,
+				07B9B3EC2099C36C0054C9ED /* PlaylistDetailViewController.swift */,
+				07B9B3EE2099C38D0054C9ED /* PlaylistDetailViewController.xib */,
+			);
+			path = PlaylistDetail;
+			sourceTree = "<group>";
+		};
+		07B9B3F02099C3EB0054C9ED /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				07B9B3F22099C4010054C9ED /* PlaylistDetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		07B9B3F12099C3F20054C9ED /* View */ = {
+			isa = PBXGroup;
+			children = (
+				07B9B3F52099E62C0054C9ED /* TrackCell.swift */,
+				07B9B3F72099E6470054C9ED /* TrackCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		07B9B3F92099F3110054C9ED /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				07B9B3FA2099F3240054C9ED /* Playlistable.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		8002EADEB646F19E0FC1EB75 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3CB714B70293B5175BA399C3 /* Pods-BetDeez.debug.xcconfig */,
+				0E451A35EF00CEBB23A104DE /* Pods-BetDeez.release.xcconfig */,
+				CC6162C0C9A56FF84A8FF504 /* Pods-BetDeezTests.debug.xcconfig */,
+				DA2A980597779D79CDD827A9 /* Pods-BetDeezTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E0FC2BFE73BC9FED3BCB3149 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AA2560914C36FC031B672546 /* Pods_BetDeez.framework */,
+				5D48D91FCC72E4A03BAFCE70 /* Pods_BetDeezTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		07B9B3A02097A4700054C9ED /* BetDeez */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07B9B3BE2097A4700054C9ED /* Build configuration list for PBXNativeTarget "BetDeez" */;
+			buildPhases = (
+				F720B0AE5A8EC718059C0056 /* [CP] Check Pods Manifest.lock */,
+				07B9B39D2097A4700054C9ED /* Sources */,
+				07B9B39E2097A4700054C9ED /* Frameworks */,
+				07B9B39F2097A4700054C9ED /* Resources */,
+				2AAE46B5BD01F9C40CF03723 /* [CP] Embed Pods Frameworks */,
+				DD41BD26660755613CC61B09 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BetDeez;
+			productName = BetDeez;
+			productReference = 07B9B3A12097A4700054C9ED /* BetDeez.app */;
+			productType = "com.apple.product-type.application";
+		};
+		07B9B3B42097A4700054C9ED /* BetDeezTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07B9B3C12097A4700054C9ED /* Build configuration list for PBXNativeTarget "BetDeezTests" */;
+			buildPhases = (
+				ABC95F733FB75AF76061432D /* [CP] Check Pods Manifest.lock */,
+				07B9B3B12097A4700054C9ED /* Sources */,
+				07B9B3B22097A4700054C9ED /* Frameworks */,
+				07B9B3B32097A4700054C9ED /* Resources */,
+				665EBD9697502A098376ECC9 /* [CP] Embed Pods Frameworks */,
+				64081ECC00540F14BD6CBEC1 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				07B9B3B72097A4700054C9ED /* PBXTargetDependency */,
+			);
+			name = BetDeezTests;
+			productName = BetDeezTests;
+			productReference = 07B9B3B52097A4700054C9ED /* BetDeezTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		07B9B3992097A4700054C9ED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Paul-Anatole CLAUDOT";
+				TargetAttributes = {
+					07B9B3A02097A4700054C9ED = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					07B9B3B42097A4700054C9ED = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 07B9B3A02097A4700054C9ED;
+					};
+				};
+			};
+			buildConfigurationList = 07B9B39C2097A4700054C9ED /* Build configuration list for PBXProject "BetDeez" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 07B9B3982097A4700054C9ED;
+			productRefGroup = 07B9B3A22097A4700054C9ED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				07B9B3A02097A4700054C9ED /* BetDeez */,
+				07B9B3B42097A4700054C9ED /* BetDeezTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		07B9B39F2097A4700054C9ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07B9B3DC2099A2E60054C9ED /* PlaylistsViewController.xib in Resources */,
+				07B9B3AF2097A4700054C9ED /* LaunchScreen.storyboard in Resources */,
+				07B9B3AC2097A4700054C9ED /* Assets.xcassets in Resources */,
+				07B9B3F82099E6470054C9ED /* TrackCell.xib in Resources */,
+				07B9B3E62099AC300054C9ED /* PlaylistCell.xib in Resources */,
+				07B9B3EF2099C38D0054C9ED /* PlaylistDetailViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07B9B3B32097A4700054C9ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2AAE46B5BD01F9C40CF03723 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BetDeez/Pods-BetDeez-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireNetworkActivityIndicator/AlamofireNetworkActivityIndicator.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAlamofire/RxAlamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireNetworkActivityIndicator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAlamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BetDeez/Pods-BetDeez-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		64081ECC00540F14BD6CBEC1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BetDeezTests/Pods-BetDeezTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		665EBD9697502A098376ECC9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BetDeezTests/Pods-BetDeezTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxTest/RxTest.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxTest.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BetDeezTests/Pods-BetDeezTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ABC95F733FB75AF76061432D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BetDeezTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD41BD26660755613CC61B09 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BetDeez/Pods-BetDeez-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F720B0AE5A8EC718059C0056 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BetDeez-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		07B9B39D2097A4700054C9ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07B9B3D320988A110054C9ED /* Api.swift in Sources */,
+				07B9B3E12099A3A00054C9ED /* Timestamp+Formatter.swift in Sources */,
+				07B9B3CD2098878C0054C9ED /* Author.swift in Sources */,
+				07B9B3FB2099F3240054C9ED /* Playlistable.swift in Sources */,
+				07B9B3A52097A4700054C9ED /* AppDelegate.swift in Sources */,
+				07B9B3D520988BA80054C9ED /* Api+Playlist.swift in Sources */,
+				07B9B3F62099E62C0054C9ED /* TrackCell.swift in Sources */,
+				07B9B3DA2099A2D40054C9ED /* PlaylistsViewController.swift in Sources */,
+				07B9B3D720988BB60054C9ED /* Api+Track.swift in Sources */,
+				07B9B3F32099C4010054C9ED /* PlaylistDetailViewModel.swift in Sources */,
+				07B9B3CB209884540054C9ED /* Playlist.swift in Sources */,
+				07B9B3ED2099C36C0054C9ED /* PlaylistDetailViewController.swift in Sources */,
+				07B9B3D12098892A0054C9ED /* Artist.swift in Sources */,
+				07B9B3DF2099A30B0054C9ED /* PlaylistsViewModel.swift in Sources */,
+				07B9B3CF209889220054C9ED /* Track.swift in Sources */,
+				07B9B3E42099AC250054C9ED /* PlaylistCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07B9B3B12097A4700054C9ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07B9B3BA2097A4700054C9ED /* BetDeezTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		07B9B3B72097A4700054C9ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 07B9B3A02097A4700054C9ED /* BetDeez */;
+			targetProxy = 07B9B3B62097A4700054C9ED /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		07B9B3AD2097A4700054C9ED /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07B9B3AE2097A4700054C9ED /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		07B9B3BC2097A4700054C9ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		07B9B3BD2097A4700054C9ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		07B9B3BF2097A4700054C9ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CB714B70293B5175BA399C3 /* Pods-BetDeez.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E4DJ2XBNHF;
+				INFOPLIST_FILE = BetDeez/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Summerize.BetDeez;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		07B9B3C02097A4700054C9ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E451A35EF00CEBB23A104DE /* Pods-BetDeez.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E4DJ2XBNHF;
+				INFOPLIST_FILE = BetDeez/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Summerize.BetDeez;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		07B9B3C22097A4700054C9ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC6162C0C9A56FF84A8FF504 /* Pods-BetDeezTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BetDeezTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Summerize.BetDeezTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BetDeez.app/BetDeez";
+			};
+			name = Debug;
+		};
+		07B9B3C32097A4700054C9ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA2A980597779D79CDD827A9 /* Pods-BetDeezTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BetDeezTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Summerize.BetDeezTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BetDeez.app/BetDeez";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		07B9B39C2097A4700054C9ED /* Build configuration list for PBXProject "BetDeez" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07B9B3BC2097A4700054C9ED /* Debug */,
+				07B9B3BD2097A4700054C9ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07B9B3BE2097A4700054C9ED /* Build configuration list for PBXNativeTarget "BetDeez" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07B9B3BF2097A4700054C9ED /* Debug */,
+				07B9B3C02097A4700054C9ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07B9B3C12097A4700054C9ED /* Build configuration list for PBXNativeTarget "BetDeezTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07B9B3C22097A4700054C9ED /* Debug */,
+				07B9B3C32097A4700054C9ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 07B9B3992097A4700054C9ED /* Project object */;
+}

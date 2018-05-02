@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PlaylistCell" id="C3a-6C-GQn" customClass="PlaylistCell" customModule="BetDeez" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="358" height="479"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="358" height="479"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yqV-Cu-sXq">
+                        <rect key="frame" x="0.0" y="0.0" width="358" height="358"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="yqV-Cu-sXq" secondAttribute="height" multiplier="1:1" id="cql-MU-6LW"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DRJ-RF-AgM">
+                        <rect key="frame" x="0.0" y="366" width="358" height="105"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="DRJ-RF-AgM" firstAttribute="top" secondItem="yqV-Cu-sXq" secondAttribute="bottom" constant="8" id="0Oe-0T-Xek"/>
+                <constraint firstAttribute="trailing" secondItem="yqV-Cu-sXq" secondAttribute="trailing" id="8Bq-kc-TAz"/>
+                <constraint firstAttribute="bottom" secondItem="DRJ-RF-AgM" secondAttribute="bottom" constant="8" id="91Z-bg-Vk9"/>
+                <constraint firstAttribute="trailing" secondItem="DRJ-RF-AgM" secondAttribute="trailing" id="B0c-Ci-Pdt"/>
+                <constraint firstItem="yqV-Cu-sXq" firstAttribute="top" secondItem="C3a-6C-GQn" secondAttribute="top" id="J0V-YW-kYU"/>
+                <constraint firstItem="DRJ-RF-AgM" firstAttribute="leading" secondItem="C3a-6C-GQn" secondAttribute="leading" id="PGf-J4-4bQ"/>
+                <constraint firstItem="yqV-Cu-sXq" firstAttribute="leading" secondItem="C3a-6C-GQn" secondAttribute="leading" id="rer-lm-RG9"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ls0-8s-dYE"/>
+            <size key="customSize" width="358" height="479"/>
+            <connections>
+                <outlet property="imageView" destination="yqV-Cu-sXq" id="gig-JF-SRa"/>
+                <outlet property="titleLabel" destination="DRJ-RF-AgM" id="1NI-uz-Vn1"/>
+            </connections>
+            <point key="canvasLocation" x="17" y="203.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

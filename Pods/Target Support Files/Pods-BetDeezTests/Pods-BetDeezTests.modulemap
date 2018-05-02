@@ -1,0 +1,6 @@
+framework module Pods_BetDeezTests {
+  umbrella header "Pods-BetDeezTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
