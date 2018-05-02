@@ -13,4 +13,9 @@ class TrackCell: UITableViewCell {
     @IBOutlet weak var durationLabel: UILabel!
     
     static let reusableIdentifier = "TrackCell"
+    
+    override func awakeFromNib() {
+        // Customize view here
+        titleAndArtistLabel.textColor = UIColor.blue
+    }
 }

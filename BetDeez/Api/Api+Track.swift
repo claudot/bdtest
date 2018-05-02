@@ -16,9 +16,12 @@ extension Api {
         
         return  requestJSON(.get, path, parameters: nil)
             .map{
+                // Convert to JSON with SwiftyJSON
                 JSON.init($0.1)
             }
             .flatMap{ json -> Observable<[Trackable]> in
+                // Convert json to Observable High level object with custom mapper
+                // We should use Codable protocol to do it and let the protocol handle it
                 guard let trackssData = json["data"].array else {
                     return Observable.empty()
                 }
